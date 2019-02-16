@@ -21,16 +21,17 @@ body {
     height: 100px;
     margin-bottom: 15px;
     padding: 5px;
+    overflow: hidden;
     border: 1px solid #e0e0e0;
     background: #fff;
 }
-.calc-display .current,
+.calc-display .operand,
 .calc-display .result {
     text-align: right;
     line-height: 30px;
     font-size: 30px;
 }
-.calc-button {
+.calc-keyboard input {
     display: inline-block;
     margin: 5px;
     font-size: 24px;
@@ -38,6 +39,10 @@ body {
     cursor: pointer;
     width: 75px;
     height: 60px;
+    border: 1px solid #e0e0e0;
+    outline: none;
     background: #fff;
-
+}
+.calc-keyboard input:active {
+    background: #f8f8f8;
 }

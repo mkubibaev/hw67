@@ -1,11 +1,11 @@
 import React from 'react';
 import CalcButton from "./CalcButton/CalcButton";
 
-const CalcButtons = () => {
+const CalcButtons = props => {
     return (
         <div className="calc-buttons">
             <div>
-                <CalcButton value="7"/>
+                <CalcButton value="7" click={props.clicked}/>
                 <CalcButton value="8"/>
                 <CalcButton value="9"/>
                 <CalcButton value="+"/>
@@ -23,8 +23,8 @@ const CalcButtons = () => {
                 <CalcButton value="x"/>
             </div>
             <div>
+                <CalcButton value="<"/>
                 <CalcButton value="0"/>
-                <CalcButton value="C"/>
                 <CalcButton value="="/>
                 <CalcButton value="/"/>
             </div>

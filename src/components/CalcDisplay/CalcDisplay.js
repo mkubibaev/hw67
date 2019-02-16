@@ -1,12 +1,12 @@
 import React from 'react';
 
-const CalcDisplay = () => {
-    return (
-        <div className="calc-display">
-            <div className="result">0</div>
-            <div className="current">0</div>
-        </div>
-    );
-};
+const CalcDisplay = props => (
+    <div className="calc-display">
+        <div className="result">{props.result ? `= ${props.result}` : ''}</div>
+        <div className="operand">{props.operator} {props.secondOperand}</div>
+        <div className="operand">{props.firstOperand ? props.firstOperand : 0}</div>
+    </div>
+);
+
 
 export default CalcDisplay;
